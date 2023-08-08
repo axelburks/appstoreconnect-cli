@@ -8,7 +8,7 @@ extension DeviceStatus: CaseIterable, ExpressibleByArgument, CustomStringConvert
     public typealias AllCases = [DeviceStatus]
 
     public static var allCases: AllCases {
-        [.enabled, .disabled]
+        [.enabled, .disabled, .processing]
     }
 
     public init?(argument: String) {
